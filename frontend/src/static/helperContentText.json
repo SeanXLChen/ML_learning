@@ -1,0 +1,117 @@
+{
+  "svm": {
+    "content": [
+      {
+        "page": "introduction",
+        "content": []
+      },
+      {
+        "page": "use-cases",
+        "content": []
+      },
+      {
+        "page": "train-model",
+        "content": [
+          {
+            "section": "Kernel",
+            "response": [
+              "SVM algorithms use a group of mathematical functions that are known as kernels. The function of a kernel is to require data as input and transform it into the desired form. "
+            ],
+            "furtherResources": [
+              "https://dataaspirant.com/svm-kernels/#t-1608054630725"
+            ],
+            "subSection": [
+              {
+                "section": "Linear",
+                "response": [
+                  "In linear kernel, the kernel function takes the form of a linear function as follows-",
+                  "linear kernel : K(xi , xj) = xiT xj",
+                  "Linear kernel is used when the data is linearly separable. It means that data can be separated using a single line. It is one of the most common kernels to be used. It is mostly used when there are large number of features in a dataset. Linear kernel is often used for text classification purposes.",
+                  "Training with a linear kernel is usually faster, because we only need to optimize the C regularization parameter. When training with other kernels, we also need to optimize the γ parameter. So, performing a grid search will usually take more time."
+                ],
+                "furtherResources": [
+                  "https://dataaspirant.com/svm-kernels/#t-1608054630725"
+                ]
+              },
+              {
+                "section": "Polynomial",
+                "response": [
+                  "Polynomial kernel represents the similarity of vectors (training samples) in a feature space over polynomials of the original variables. The polynomial kernel looks not only at the given features of input samples to determine their similarity, but also combinations of the input samples.",
+
+                  "For degree-d polynomials, the polynomial kernel is defined as follows –",
+
+                  "Polynomial kernel : K(xi , xj) = (γxiT xj + r)d , γ > 0",
+
+                  "Polynomial kernel is very popular in Natural Language Processing. The most common degree is d = 2 (quadratic), since larger degrees tend to overfit on NLP problems. It can be visualized with the following diagram."
+                ],
+                "furtherResources": [
+                  "https://dataaspirant.com/svm-kernels/#t-1608054630725"
+                ]
+              }
+            ]
+          },
+          {
+            "section": "C",
+            "response": [
+              "The parameter C in SVM helps control the trade-off between the training error and the margin since it can determine the penalty for misclassified data points during the training process.",
+              "To be specific, a smaller value of C allows for a larger margin, potentially leading to more misclassifications on the training data. On the other hand, a larger value of C puts more emphasis on minimizing the training error, potentially leading to a narrower margin."
+            ],
+            "furtherResources": [
+              "https://www.baeldung.com/cs/ml-svm-c-parameter",
+              "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+            ],
+            "subSection": []
+          },
+          {
+            "section": "Degree",
+            "response": [
+              "Degree of the polynomial kernel function (‘poly’). Must be non-negative. Ignored by all other kernels."
+            ],
+            "furtherResources": [
+              "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+            ],
+            "subSection": []
+          }
+        ]
+      },
+      {
+        "page": "generated-model",
+        "content": [
+          {
+            "section": "Confusion Matrix",
+            "response": [
+              "A confusion matrix is a performance evaluation tool in machine learning, representing the accuracy of a classification model. It displays the number of true positives, true negatives, false positives, and false negatives. This matrix aids in analyzing model performance, identifying mis-classifications, and improving predictive accuracy."
+            ],
+            "furtherResources": [
+              "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html"
+            ],
+            "subSection": [
+              {
+                "section": "True Positive (TP) ",
+                "response": [
+                  "An example in which the model correctly predicts the positive class. For example, the model infers that a particular email message is spam, and that email message really is spam."
+                ],
+                "furtherResources": [
+                  "https://developers.google.com/machine-learning/glossary/fundamentals?hl=en#t"
+                ]
+              },
+              {
+                "section": "True Negative (TN) ",
+                "response": [
+                  "An example in which the model correctly predicts the negative class. For example, the model infers that a particular email message is not spam, and that email message really is not spam."
+                ],
+                "furtherResources": [
+                  "https://developers.google.com/machine-learning/glossary/fundamentals?hl=en#t"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "page": "feature-engineering",
+        "content": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "principlesTopSection": {
+    "title": "principles",
+    "subtitle": [
+      {
+        "title": "What is machine learning",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "Machine Learning could generally be defined as something that learns by experience. Here learning could mean a training phase which the model takes to study the dataset (experience). Eg: Predictive Analytics, Speech/Audio recognition etc. The idea of Machine Learning is that there will be some learning algorithm that will help the machine learn from data. Professor Mitchell defined it as follows.",
+              "\"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.\"",
+              "Machine learning learns from data, and uses that data to recognize patterns. Jay Wilpon, Senior Vice President of Natural Language Research at Interactions, best describes how machine learning works by using an analogy of fruits. For instance, let’s assume someone handed you an orange and a grapefruit, and you’ve never seen them before. How do you tell them apart? They’re both round, but the grapefruit is slightly bigger. You could then determine that size is one feature that can separate the two. Now, let’s say someone hands you an apple. While the shapes are similar, this fruit is red, triggering you to realize that color is another potential differentiator. Finally, someone gives you a banana...now you can add shape as another characterization.",
+              "This simple analogy is similar to how machine learning works. The job of machine learning is not only to recognize that what it’s being handed is fruit, but also to make sure that it is not calling a grapefruit a banana and vice versa.."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Machine Learning Methods",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "Machine Learning has multiple algorithms, techniques, and methodologies that can be used to build models to solve real-world problems using data. Here are methods based on the amount of human supervision in the learning process"
+            ]
+          },
+          {
+            "section-title": "Supervised Learning",
+            "section-content": [
+              "Supervised learning methods or algorithms include learning algorithms that take in data samples (known as training data) and associated outputs (known as labels or responses) with each data sample during the model training process. The main objective is to learn a mapping or association between input data samples x and their corresponding outputs y based on multiple training data instances. This learned knowledge can then be used in the future to predict an output y′ for any new input data sample x′ which was previously unknown or unseen during the model training process. These methods are termed as supervised because the model learns on data samples where the desired output responses/labels are already known beforehand in the training phase.",
+              "Supervised learning basically tries to model the relationship between the inputs and their corresponding outputs from the training data so that we would be able to predict output responses for new data inputs based on the knowledge it gained earlier with regard to relationships and mappings between the inputs and their target outputs. This is precisely why supervised learning methods are extensively used in predictive analytics where the main objective is to predict some response for some input data that’s typically fed into a trained supervised ML model. Supervised learning methods are of two major classes based on the type of ML tasks they aim to solve."
+            ]
+          },
+          {
+            "section-title": "Unsupervised Learning",
+            "section-content": [
+              "Supervised learning methods usually require some training data where the outcomes which we are trying to predict are already available in the form of discrete labels or continuous values. However, often we do not have the liberty or advantage of having pre-labeled training data and we still want to extract useful insights or patterns from our data. In this scenario, unsupervised learning methods are extremely powerful. These methods are called unsupervised because the model or algorithm tries to learn inherent latent structures, patterns and relationships from given data without any help or supervision like providing annotations in the form of labeled outputs or outcomes.",
+              "Unsupervised learning is more concerned with trying to extract meaningful insights or information from data rather than trying to predict some outcome based on previously available supervised training data. There is more uncertainty in the results of unsupervised learning but you can also gain a lot of information from these models that was previously unavailable to view just by looking at the raw data. Often unsupervised learning could be one of the tasks involved in building a huge intelligence system. For example, we could use unsupervised learning to get possible outcome labels for tweet sentiments by using the knowledge of the English vocabulary and then train a supervised model on similar data points and their outcomes which we obtained previously through unsupervised learning. There is no hard and fast rule with regard to using just one specific technique. You can always combine multiple methods as long as they are relevant in solving the problem."
+            ]
+          },
+          {
+            "section-title": "Semi-Supervised Learning",
+            "section-content": [
+              "The semi-supervised learning methods typically fall between supervised and unsupervised learning methods. These methods usually use a lot of training data that’s unlabeled (forming the unsupervised learning component) and a small amount of pre-labeled and annotated data (forming the supervised learning component). Multiple techniques are available in the form of generative methods, graph based methods, and heuristic based methods.",
+              "A simple approach would be building a supervised model based on labeled data, which is limited, and then applying the same to large amounts of unlabeled data to get more labeled samples, train the model on them and repeat the process. Another approach would be to use unsupervised algorithms to cluster similar data samples, use human-in-the-loop efforts to manually annotate or label these groups, and then use a combination of this information in the future. This approach is used in many image tagging systems. Covering semi-supervised methods would be out of the present scope of this book."
+            ]
+          },
+          {
+            "section-title": "Reinforcement Learning",
+            "section-content": [
+              "The reinforcement learning methods are a bit different from conventional supervised or unsupervised methods. In this context, we have an agent that we want to train over a period of time to interact with a specific environment and improve its performance over a period of time with regard to the type of actions it performs on the environment. Typically the agent starts with a set of strategies or policies for interacting with the environment. On observing the environment, it takes a particular action based on a rule or policy and by observing the current state of the environment. Based on the action, the agent gets a reward, which could be beneficial or detrimental in the form of a penalty. It updates its current policies and strategies if needed and this iterative process continues till it learns enough about its environment to get the desired rewards"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The Machine Learning Pipeline",
+        "content": "Machine learning follows an iterative workflow or pipeline that includes stages such as data collection, preprocessing, feature engineering, model selection, training, evaluation, and deployment"
+      }
+    ]
+  },
+  "principlesSecondSection": {
+    "title": "principles",
+    "subtitle": [
+      {
+        "title": "",
+        "content": [
+          {
+            "section-title": "Data Exploration and Preprocessing",
+            "section-content": [
+              "This section covers the journey data takes through a typical Machine Learning-related use case, where it goes from its initial raw form to a form that can be used by Machine Learning algorithms/models for further processing. Various data formats are addressed, along with processing and wrangling techniques aimed at transforming the data into a suitable format for utilization by Machine Learning algorithms in their analysis. Additionally, different visualization techniques are explored to enhance our understanding of the available data. Collectively, these techniques will better prepare us to tackle the problems at hand."
+            ]
+          },
+          {
+            "section-title": "Model Build",
+            "section-content": [
+              "A model can be described as a relationship between output or response variables and its corresponding input or independent variables in a dataset. Models are constructed through a learning process that involves understanding relationships, selecting appropriate algorithms, and optimizing parameters. A model encapsulates the connection between input (independent) and output (dependent) variables in a dataset. It's often expressed through mathematical equations, functions, or rules that describe how the output depends on the input."
+            ]
+          },
+          {
+            "section-title": "Model Evaluation and Tuning",
+            "section-content": [
+              "After creating models through data processing and algorithm selection, the next crucial step is model evaluation. This step involves determining the effectiveness of a model, ensuring it meets performance expectations, and comparing different models to make informed decisions. Model evaluation is an iterative process that aids in refining models and deciding their deployment. Model tuning is a cornerstone of Machine Learning that often involves delving into the algorithm's underlying mathematics and logic. Model tuning focuses on parameter adjustment to extract maximum performance from a given model."
+            ]
+          }
+        ]
+      }
+    ],
+    "source": [
+      "Sarkar, Dipanjan, et al. Practical Machine Learning with Python: A Problem-Solver’s Guide to Building Real-World Intelligent Systems. Apress, 2018. ",
+      "Salam, Nadeeha. “Machine Learning Fundamentals for Beginners.” Medium, AlmaBetter, 21 July 2021, medium.com/almabetter/machine-learning-fundamentals-for-beginners-70f409b1197e. "
+    ]
+  },
+  "svmIntroductionPart1": {
+    "title": "Support Vector Machine(SVM)",
+    "subtitle": [
+      {
+        "title": "What is Support Vector Machine(SVM)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "Support Vector Machines (SVMs in short) are machine learning algorithms that are used for classification and regression purposes. SVMs are one of the powerful machine learning algorithms for classification, regression and outlier detection purposes. An SVM classifier builds a model that assigns new data points to one of the given categories. Thus, it can be viewed as a non-probabilistic binary linear classifier.",
+              "The original SVM algorithm was developed by Vladimir N Vapnik and Alexey Ya. Chervonenkis in 1963. At that time, the algorithm was in early stages. The only possibility is to draw hyperplanes for linear classifier. In 1992, Bernhard E. Boser, Isabelle M Guyon and Vladimir N Vapnik suggested a way to create non-linear classifiers by applying the kernel trick to maximum-margin hyperplanes. The current standard was proposed by Corinna Cortes and Vapnik in 1993 and published in 1995.",
+              "SVMs can be used for linear classification purposes. In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using the kernel trick. It enable us to implicitly map the inputs into high dimensional feature spaces."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "SVM Kernel Functions",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "SVM algorithms use a group of mathematical functions that are known as kernels. The function of a kernel is to require data as input and transform it into the desired form. ",
+              "Different SVM algorithms use differing kinds of kernel functions. These functions are of different kinds—for instance, linear, nonlinear, polynomial, radial basis function (RBF), and sigmoid.",
+              "The most preferred kind of kernel function is RBF. Because it's localized and has a finite response along the complete x-axis.",
+              "The kernel functions return the scalar product between two points in an exceedingly suitable feature space. Thus by defining a notion of resemblance, with a little computing cost even in the case of very high-dimensional spaces."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "svmIntroductionPart2": {
+    "title": "Support Vector Machine",
+    "subtitle": [
+      {
+        "title": "Popular SVM Kernel Functions",
+        "content": [
+          {
+            "section-title": "Linear kernel ",
+            "section-content": [
+              "In linear kernel, the kernel function takes the form of a linear function as follows-",
+              "linear kernel : K(xi , xj) = xiT xj",
+              "Linear kernel is used when the data is linearly separable. It means that data can be separated using a single line. It is one of the most common kernels to be used. It is mostly used when there are large number of features in a dataset. Linear kernel is often used for text classification purposes.",
+              "Training with a linear kernel is usually faster, because we only need to optimize the C regularization parameter. When training with other kernels, we also need to optimize the γ parameter. So, performing a grid search will usually take more time."
+            ]
+          },
+          {
+            "section-title": "Polynomial kernel ",
+            "section-content": [
+              "Polynomial kernel represents the similarity of vectors (training samples) in a feature space over polynomials of the original variables. The polynomial kernel looks not only at the given features of input samples to determine their similarity, but also combinations of the input samples.",
+
+              "For degree-d polynomials, the polynomial kernel is defined as follows –",
+
+              "Polynomial kernel : K(xi , xj) = (γxiT xj + r)d , γ > 0",
+
+              "Polynomial kernel is very popular in Natural Language Processing. The most common degree is d = 2 (quadratic), since larger degrees tend to overfit on NLP problems. It can be visualized with the following diagram."
+            ]
+          },
+          {
+            "section-title": "Radial Basis Function (RBF) kernel ",
+            "section-content": [
+              "Radial basis function kernel is a general purpose kernel. It is used when we have no prior knowledge about the data. The RBF kernel on two samples x and y is defined by the following equation –",
+              "Radial Basis Function kernel"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "svmIntroductionPart3": {
+    "title": "Support Vector Machine",
+    "subtitle": [
+      {
+        "title": "",
+        "content": [
+          {
+            "section-title": "Sigmoid kernel ",
+            "section-content": [
+              "It is mostly preferred for neural networks. This kernel function is similar to a two-layer perceptron model of the neural network, which works as an activation function for neurons. Sigmoid kernel is given by the following equation –",
+              "sigmoid kernel : k (x, y) = tanh(αxTy + c)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hyperplane",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A hyperplane is a decision boundary which separates between given set of data points having different class labels. The SVM classifier separates data points using a hyperplane with the maximum amount of margin. This hyperplane is known as the maximum margin hyperplane and the linear classifier it defines is known as the maximum margin classifier."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "svmIntroductionPart4": {
+    "title": "Support Vector Machine",
+    "subtitle": [
+      {
+        "title": "",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": []
+          }
+        ]
+      }
+    ],
+    "source": [
+      "Salam, Nadeeha. “Machine Learning Fundamentals for Beginners.” Medium, AlmaBetter, 21 July 2021, medium.com/almabetter/machine-learning-fundamentals-for-beginners-70f409b1197e.",
+      "“Seven Most Popular SVM Kernels.” Dataaspirant, 17 Dec. 2020, dataaspirant.com/svm-kernels/#t-1608054630725. "
+    ]
+  },
+  "glossary": {
+    "title": "Glossary",
+    "subtitle": [
+      {
+        "title": "Artificial Intelligence",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A non-human program or model that can solve sophisticated tasks. For example, a program or model that translates text or a program or model that identifies diseases from radiologic images both exhibit artificial intelligence. Formally, machine learning is a sub-field of artificial intelligence. However, in recent years, some organizations have begun using the terms artificial intelligence and machine learning interchangeably."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "False Negative (FN)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "An example in which the model mistakenly predicts the negative class. For example, the model predicts that a particular email message is not spam (the negative class), but that email message actually is spam."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "False Positive (FP)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "An example in which the model mistakenly predicts the positive class. For example, the model predicts that a particular email message is spam (the positive class), but that email message is actually not spam."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Feature Engineering",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A process that involves the following steps: 1. Determining which features might be useful in training a model. 2. Converting raw data from the dataset into efficient versions of those features. For example, you might determine that temperature might be a useful feature. Then, you might experiment with bucketing to optimize what the model can learn from different temperature ranges. Feature engineering is sometimes called feature extraction."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Gradient Descent",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A mathematical technique to minimize loss. Gradient descent iteratively adjusts weights and biases, gradually finding the best combination to minimize loss. Gradient descent is older—much, much older—than machine learning."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Hyperparameter",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "The variables that you or a hyperparameter tuning service adjust during successive runs of training a model. For example, learning rate is a hyperparameter. You could set the learning rate to 0.01 before one training session. If you determine that 0.01 is too high, you could perhaps set the learning rate to 0.003 for the next training session. In contrast, parameters are the various weights and bias that the model learns during training."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Loss Function",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "During training or testing, a mathematical function that calculates the loss on a batch of examples. A loss function returns a lower loss for models that make good predictions than for models that make bad predictions. The goal of training is typically to minimize the loss that a loss function returns. Many different kinds of loss functions exist. Pick the appropriate loss function for the kind of model you are building."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Machine Learning (ML)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A program or system that trains a model from input data. The trained model can make useful predictions from new (never-before-seen) data drawn from the same distribution as the one used to train the model. Machine learning also refers to the field of study concerned with these programs or systems."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Neural Network",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "A model containing at least one hidden layer. A deep neural network is a type of neural network containing more than one hidden layer. Each neuron in a neural network connects to all of the nodes in the next layer. Neural networks implemented on computers are sometimes called artificial neural networks to differentiate them from neural networks found in brains and other nervous systems. Some neural networks can mimic extremely complex nonlinear relationships between different features and the label."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Overfitting",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "Creating a model that matches the training data so closely that the model fails to make correct predictions on new data. Regularization can reduce overfitting. Training on a large and diverse training set can also reduce overfitting."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Supervised Machine Learning",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "Training a model from features and their corresponding labels. Supervised machine learning is analogous to learning a subject by studying a set of questions and their corresponding answers. After mastering the mapping between questions and answers, a student can then provide answers to new (never-before-seen) questions on the same topic."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Training",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "The process of determining the ideal parameters (weights and biases) comprising a model. During training, a system reads in examples and gradually adjusts parameters. Training uses each example anywhere from a few times to billions of times."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "True Negative(TN)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "An example in which the model correctly predicts the negative class. For example, the model infers that a particular email message is not spam, and that email message really is not spam."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "True Positive(TP)",
+        "content": [
+          {
+            "section-title": "",
+            "section-content": [
+              "An example in which the model correctly predicts the positive class. For example, the model infers that a particular email message is spam, and that email message really is spam."
+            ]
+          }
+        ]
+      }
+    ],
+    "source": [
+      "Google Developers. \"Fundamentals - Machine Learning Glossary.\" Google Developers. https://developers.google.com/machine-learning/glossary/fundamentals?hl=en#t."
+    ]
+  }
+}

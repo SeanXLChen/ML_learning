@@ -1,0 +1,82 @@
+.principles {
+    margin: 2% 5%;
+}
+
+.glossary {
+    margin: 2% 5%;
+}
+
+.principle-title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.content-card {
+    flex: 0 0 15vw;;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ml-pipeline {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    background-color: #5b91cb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.ml-pipeline:hover {
+    background-color: #0056b3;
+}
+
+
+//static pages
+.static-content {
+    // width: calc(100% - 230px);
+    margin: 20px 50px;
+  }
+  
+  .content-section {
+    width: 100%;
+  }
+  
+  .static-content-subtitle {
+    // text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+  }
+  
+  .static-content-footer {
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+  }
+
+  ul {
+    list-style-type: none; 
+    padding-left: 0;
+   }
+
+   li {
+    margin: 10px 0;
+   }
+   
+   .section-title {
+     margin: 15px 0;
+   }
+

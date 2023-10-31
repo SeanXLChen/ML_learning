@@ -1,0 +1,101 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-home .col {
+  margin-top: 12px;
+}
+
+.container-home .card {
+  width: 16rem;
+  height: 100%;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.novice {
+  color: green
+}
+
+.container-home .card.novice-border:hover {
+  border-color: green;
+}
+
+.novice-background {
+  background-color: green
+}
+
+.intermediate {
+  color: blue
+}
+
+.container-home .card.intermediate-border:hover {
+  border-color: blue;
+}
+
+.intermediate-background {
+  background-color: blue
+}
+
+.expert {
+  color: red
+}
+
+.container-home .card.expert-border:hover {
+  border-color: red;
+}
+
+.expert-background {
+  background-color: red
+}
+
+.container-home .card-underline {
+  bottom: 0;
+  left: auto;
+  height:5px;
+  width: 0;
+}
+
+.container-home .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container-home .card-text {
+  font-size: 1rem;
+}
+
+.container-home .card-title-icon {
+  height: 120px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container-home .card-text button {
+  margin-top: 10px;
+  font-size: small;
+  width: 100%;
+}
+
+.container-home .card:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container-home .card:hover .card-underline {
+  transition: width 0.5s ease;
+  width: 100%;
+}
+
+.container-home .card:not(:hover) .card-underline {
+  transition: none;
+  width: 0;
+}
+
+.container-home .card:hover .card-title-icon {
+  font-size: 6rem;
+}
