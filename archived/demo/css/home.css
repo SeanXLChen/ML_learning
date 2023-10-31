@@ -1,0 +1,24 @@
+div.stButton > button:first-child {
+    box-shadow: 0px 5px 5px -5px #F2A93B;
+    background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+    background-color:#000000;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    height:350px;
+}
+div.stButton > button:hover {
+    background:linear-gradient(to bottom, #4089B1 5%, #4089B1 100%);
+    background-color:#4089B1;    
+}
+div.stButton > button:active{
+    position:relative;
+    top:1px;
+}
