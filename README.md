@@ -1,4 +1,7 @@
-# EducativeMLDashbaord
+# Machine Learning Dashboard
+Team Lead: Professor Mona Ali
+Front-End team: Victor Wu, Macarius Hui, Yaqi Lyu
+Back-End team: Jackie Chen, Runjie Liu, Xiaolai Chen
 
 ## Frontend Installation
 ### 1. Install Node.js and NPM, follow these instructions:
